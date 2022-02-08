@@ -9,7 +9,7 @@ import glob
 import concurrent.futures
 from collections import Counter
 
-directory = "/home/fyp/Desktop/cnn/pcaps/"
+directory = "/home/ubuntu/test/FYP_CNN_LSTM/source"
 output_dir = "data"
 filename_list = [i.replace(".pcap", "").replace(directory, "") for i in glob.glob(directory + '*.pcap')]
 classes = {0:["BENIGN"], 1:["FTP-Patator"], 2:["SSH-Patator"], 3:["DoS GoldenEye"], 4:["DoS Hulk"], 5:["DoS Slowhttptest"], 6:["DoS slowloris"], 7:["Web Attack ñ Brute Force", "Web Attack ñ Sql Injection", "Web Attack ñ XSS"], 8:["Bot"], 9:["DDoS"], 10:["PortScan"]}
